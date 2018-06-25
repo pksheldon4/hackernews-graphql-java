@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: hackernews-graphql-java
+management:
+  endpoint:
+    health:
+      show-details: always
+
