@@ -1,4 +1,4 @@
-package com.pksheldon4.howtographql.hackernewsgraphqljava.model;
+package com.pksheldon4.howtographql.hackernewsgraphqljava.schema;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.pksheldon4.howtographql.hackernewsgraphqljava.repository.LinkRepository;
@@ -14,6 +14,6 @@ public class Query implements GraphQLQueryResolver {
     }
 
     public List<Link> allLinks() {
-        return linkRepository.getAllLinks();
-    }
+        return linkRepository.findAll();
+}
 }
